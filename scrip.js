@@ -6,7 +6,7 @@ const $play = document.querySelector('#play')
 const $stop = document.querySelector('#stop')
 const $forward = document.querySelector('#forward')
 const $backward = document.querySelector('#backward ')
-const $progress = document.querySelector('#progress')
+
 
 
 // ---- EVENTOS A ESCUCHAR 
@@ -15,8 +15,7 @@ $play.addEventListener('click', handPlay)
 $stop.addEventListener('click', handStop )
 $backward.addEventListener('click', handBackward)
 $forward.addEventListener('click', handForward)
-$video.addEventListener('loadedmetadata', handleLoaded)
-$video.addEventListener('timeupdate', handleTimeUpdate)
+
 
 
 // ---- FUNCIONES PARA LOS BOTONES DE REPRODUCION
@@ -47,6 +46,10 @@ function handForward() {
 
 
 // ---  BARRA DE TIEPO --- //
+const $progress = document.querySelector('#progress')
+
+$video.addEventListener('loadedmetadata', handleLoaded)
+$video.addEventListener('timeupdate', handleTimeUpdate)
 
 function handleLoaded() {
   $progress.max = $video.duration

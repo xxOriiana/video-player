@@ -5,6 +5,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .wrapper {
     max-inline-size: 900px;
     margin: auto;
@@ -26,8 +27,8 @@ body {
     color: #e1ffff;
     position: absolute;
     inset-block-start: 0;
-    inset-inline-start: 630px;
-    font-family: Consolas;
+    inset-inline-start: 620px;
+    font-family: Gentium;
 }
 
 .play-action {
@@ -36,7 +37,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:20px;
+    gap:50px;
 }
 
 .player-progress {
@@ -59,7 +60,7 @@ body {
     position: absolute;
     inset: 0;
     opacity: 0;
-    transition: .4s opacity;
+    transition: .5s opacity;
 }
 
 .player:hover .play-overlay {
